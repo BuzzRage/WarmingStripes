@@ -4,5 +4,5 @@ This tool let the user see Warming Stripes to different scales, time and locatio
 
 
 <p align="center">
-  <img src="./warming-stripes-fr.png" />
+  <img src="./img/warming-stripes-fr.png" />
 </p>

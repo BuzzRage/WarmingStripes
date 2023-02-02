@@ -34,9 +34,9 @@ LIM = 0.7 # degrees
 # France: https://berkeleyearth.org/wp-content/themes/client-theme/temperature-data/France-projection.txt
 
 if fr_data is True:
-    filename = "france-projection-clean.txt"
+    filename = "data/france-projection-clean.txt"
 else:
-    filename = "HadCRUT.4.6.0.0.annual_ns_avg.txt"
+    filename = "data/HadCRUT.4.6.0.0.annual_ns_avg.txt"
 
 data = pd.read_fwf(filename, index_col=0, cusecols=(0, 1), names=['year', 'anomaly'], header=None)
 
@@ -74,7 +74,7 @@ ax.set_ylim(0, 1)
 ax.set_xlim(FROM_t, TO_t + 1)
 
 if fr_data is True:
-    fig.savefig('warming-stripes-fr.png')
+    fig.savefig('img/warming-stripes-fr.png')
 else:
-    fig.savefig('warming-stripes-global.png')
+    fig.savefig('img/warming-stripes-global.png')
     
